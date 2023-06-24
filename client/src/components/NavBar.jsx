@@ -25,22 +25,22 @@ function NavBar() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav ms-auto mb-2 mb-lg-0 nav-nav-pills">
             <li className="nav-item">
-              <a className="nav-link active" aria-current="page" href="/#">
+              <a className="nav-link active" aria-current="page" href="/weekly-planner">
                 Weekly Planner
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/#">
+              <a className="nav-link active" href="/important-date">
                 Important Date
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link active" href="/#">
+              <a className="nav-link active" href="/timer">
                 Timer
               </a>
             </li>
             <li className="nav-item">
-              <button className="btn btn-primary" href="/#">
+              <button className="btn btn-primary" href="/login">
                 Login
               </button>
             </li>
