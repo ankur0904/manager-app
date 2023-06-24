@@ -8,7 +8,6 @@ import NeedLoginPage from './pages/NeedLoginPage';
 import Calendar from './components/Calendar';
 import Days from './pages/Days';
 import Timer from './components/Timer';
-import Day from './components/Day';
 
 function App() {
   return (
