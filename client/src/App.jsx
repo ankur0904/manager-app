@@ -5,9 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from './pages/LoginPage';
 import SignUpPage from './pages/SignUpPage';
 import NeedLoginPage from './pages/NeedLoginPage';
-import Calendar from './components/Calendar';
 import Days from './pages/Days';
 import Timer from './components/Timer';
+import ImportantDatePage from './pages/ImportantDatePage';
 
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
         />
         <Route
           path="/important-date"
-          element={<Calendar /> }
+          element={<ImportantDatePage /> }
         />
         <Route path="/timer" element={<Timer />} />
         <Route path="/login" element={<LoginPage />} />
