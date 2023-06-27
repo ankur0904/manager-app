@@ -27,15 +27,15 @@ function Timer() {
 
   return (
     <div className="container">
-      <div class="px-4 py-5 my-5 text-center">
-        <h1 class="display-5 fw-bold text-body-emphasis">
+      <div className="px-4 py-5 my-5 text-center">
+        <h1 className="display-5 fw-bold text-body-emphasis">
           Your time start now 🥳 for 30 minutes 🚀
         </h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">
+        <div className="col-lg-6 mx-auto">
+          <p className="lead mb-4">
           ⚠️ Don't refresh the page, time will restart 😧
           </p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+          <div className="d-grid gap-2 d-sm-flex justify-content-sm-center">
           </div>
         </div>
       </div>

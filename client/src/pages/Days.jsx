@@ -1,21 +1,24 @@
 import React from "react";
+// import { mondayTaskSchema } from "../config/Schema";
+// import { Monday } from "../config/Models";
 
 function Days() {
   return (
     <div className="container">
-      <div class="row">
-        <div class="col-sm-6 mb-3 mb-sm-0 my-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Sunday</h5>
-              <p class="card-text d-flex justify-content-end">
+      <div className="row">
+        <div className="col-sm-6 mb-3 mb-sm-0 my-3">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Sunday</h5>
+
+              <p className="card-text d-flex justify-content-end">
                 With supporting text below as a natural lead-in to additional
                 content.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   fill="currentColor"
-                  class="bi bi-trash mx-4"
+                  className="bi bi-trash mx-4"
                   viewBox="0 0 16 16"
                 >
                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
@@ -23,164 +26,164 @@ function Days() {
                 </svg>
               </p>
 
-              <div class="d-flex justify-content-center">
-                <a href="/#" class="btn btn-success mx-2">
+              <div className="d-flex justify-content-center">
+                <a href="/#" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 my-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Monday</h5>
-              <p class="card-text d-flex justify-content-end">
+        <div className="col-sm-6 my-3">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Monday</h5>
+              <p className="card-text d-flex justify-content-end">
                 With supporting text below as a natural lead-in to additional
                 content.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   fill="currentColor"
-                  class="bi bi-trash mx-4"
+                  className="bi bi-trash mx-4"
                   viewBox="0 0 16 16"
                 >
                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
                   <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
                 </svg>
               </p>
-              <div class="d-flex justify-content-center">
-              <a href="/#" class="btn btn-success mx-2">
+              <div className="d-flex justify-content-center">
+                <a href="/#" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 my-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Tuesday</h5>
-              <p class="card-text d-flex justify-content-end">
+        <div className="col-sm-6 my-3">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Tuesday</h5>
+              <p className="card-text d-flex justify-content-end">
                 With supporting text below as a natural lead-in to additional
                 content.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   fill="currentColor"
-                  class="bi bi-trash mx-4"
+                  className="bi bi-trash mx-4"
                   viewBox="0 0 16 16"
                 >
                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
                   <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
                 </svg>
               </p>
-              <div class="d-flex justify-content-center">
-              <a href="/#" class="btn btn-success mx-2">
+              <div className="d-flex justify-content-center">
+                <a href="/#" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 my-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Wednesday</h5>
-              <p class="card-text d-flex justify-content-end">
+        <div className="col-sm-6 my-3">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Wednesday</h5>
+              <p className="card-text d-flex justify-content-end">
                 With supporting text below as a natural lead-in to additional
                 content.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   fill="currentColor"
-                  class="bi bi-trash mx-4"
+                  className="bi bi-trash mx-4"
                   viewBox="0 0 16 16"
                 >
                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
                   <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
                 </svg>
               </p>
-              <div class="d-flex justify-content-center">
-              <a href="/#" class="btn btn-success mx-2">
+              <div className="d-flex justify-content-center">
+                <a href="/#" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 my-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Thursday</h5>
-              <p class="card-text d-flex justify-content-end">
+        <div className="col-sm-6 my-3">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Thursday</h5>
+              <p className="card-text d-flex justify-content-end">
                 With supporting text below as a natural lead-in to additional
                 content.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   fill="currentColor"
-                  class="bi bi-trash mx-4"
+                  className="bi bi-trash mx-4"
                   viewBox="0 0 16 16"
                 >
                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
                   <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
                 </svg>
               </p>
-              <div class="d-flex justify-content-center">
-              <a href="/#" class="btn btn-success mx-2">
+              <div className="d-flex justify-content-center">
+                <a href="/#" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 my-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Friday</h5>
-              <p class="card-text d-flex justify-content-end">
+        <div className="col-sm-6 my-3">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Friday</h5>
+              <p className="card-text d-flex justify-content-end">
                 With supporting text below as a natural lead-in to additional
                 content.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   fill="currentColor"
-                  class="bi bi-trash mx-4"
+                  className="bi bi-trash mx-4"
                   viewBox="0 0 16 16"
                 >
                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
                   <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
                 </svg>
               </p>
-              <div class="d-flex justify-content-center">
-              <a href="/#" class="btn btn-success mx-2">
+              <div className="d-flex justify-content-center">
+                <a href="/#" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-sm-6 my-3">
-          <div class="card">
-            <div class="card-body">
-              <h5 class="card-title">Saturday</h5>
-              <p class="card-text d-flex justify-content-end">
+        <div className="col-sm-6 my-3">
+          <div className="card">
+            <div className="card-body">
+              <h5 className="card-title">Saturday</h5>
+              <p className="card-text d-flex justify-content-end">
                 With supporting text below as a natural lead-in to additional
                 content.
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="28"
                   fill="currentColor"
-                  class="bi bi-trash mx-4"
+                  className="bi bi-trash mx-4"
                   viewBox="0 0 16 16"
                 >
                   <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5Zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6Z" />
                   <path d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1ZM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118ZM2.5 3h11V2h-11v1Z" />
                 </svg>
               </p>
-              <div class="d-flex justify-content-center">
-              <a href="/#" class="btn btn-success mx-2">
+              <div className="d-flex justify-content-center">
+                <a href="/#" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
