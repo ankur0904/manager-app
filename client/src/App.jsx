@@ -5,10 +5,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LoginPage from "./pages/LoginPage";
 import SignUpPage from "./pages/SignUpPage";
 import NeedLoginPage from "./pages/NeedLoginPage";
-import Days from "./pages/Days";
+import DaysPage from "./pages/DaysPage";
 import Timer from "./components/Timer";
 import ImportantDatePage from "./pages/ImportantDatePage";
-
 
 function App() {
   return (
@@ -17,7 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/weekly-planner" element={<Days />} />
+          <Route path="/weekly-planner" element={<DaysPage />} />
           <Route path="/important-date" element={<ImportantDatePage />} />
           <Route path="/timer" element={<Timer />} />
           {/* <Route path="/login" element={<LoginPage />} /> */}
