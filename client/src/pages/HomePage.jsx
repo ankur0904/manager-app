@@ -3,13 +3,6 @@ import React from "react";
 function HomePage() {
   return (
     <div className="px-4 py-5 my-5 text-center">
-      <img
-        className="d-block mx-auto mb-4"
-        src="https://picsum.photos/200"
-        alt=""
-        width="72"
-        height="57"
-      />
       <h1 className="display-5 fw-bold text-body-emphasis">
         Manage yourself here...
       </h1>

@@ -8,7 +8,7 @@ function NavBar() {
       
     >
       <div className="container-fluid mx-5 py-3 mb-4 border-bottom">
-        <a className="navbar-brand" href="/#">
+        <a className="navbar-brand" href="/">
           Manager
         </a>
         <button
@@ -29,20 +29,20 @@ function NavBar() {
                 Weekly Planner
               </a>
             </li>
-            <li className="nav-item">
+            {/* <li className="nav-item">
               <a className="nav-link active" href="/important-date">
                 Important Date
               </a>
-            </li>
+            </li> */}
             <li className="nav-item">
               <a className="nav-link active" href="/timer">
                 Timer
               </a>
             </li>
             <li className="nav-item">
-              <button className="btn btn-primary" href="/login">
+              <a className="btn btn-primary" href="/login">
                 Login
-              </button>
+              </a>
             </li>
           </ul>
         </div>

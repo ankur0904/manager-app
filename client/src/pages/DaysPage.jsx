@@ -1,26 +1,46 @@
-import React from "react";
+import React, { useEffect } from "react";
+import axios from "axios";
 import HeadingWithDelete from "../components/HeadingWithDelete";
+import { useState } from "react";
+
 function Days() {
-  const items = [
-    {
-      _id: "649a9aeb624d3969e73283cc",
-      userId: "ankur136",
-      task: "No task for Sunday",
-      __v: 0,
-    },
-    {
-      _id: "649a9f9e46a320e5db6d0412",
-      userId: "ankur136",
-      task: "No task for Sunday 1",
-      __v: 0,
-    },
-    {
-      _id: "649aa2a3e6ab63c079ccdbb0",
-      userId: "ankur136",
-      task: "No task for Sunday 1",
-      __v: 0,
-    },
-  ];
+    
+  const [mondayItem, setMondayItem] = useState([]);
+  const [tuesdayItem, setTuesdayItem] = useState([]);
+  const [wednesdayItem, setWednesdayItem] = useState([]);
+  const [thursdayItem, setThursdayItem] = useState([]);
+  const [fridayItem, setFridayItem] = useState([]);
+  const [saturdayItem, setSaturdayItem] = useState([]);
+  const [sundayItem, setSundayItem] = useState([]);
+
+  const fetchTaskData = (url, setState) => {
+    axios({
+      method: "get",
+      url: url,
+      responseType: "json",
+      headers: {
+        id: "ankur136",
+      },
+    })
+      .then(function (response) {
+        setState(response.data);
+      })
+      .catch(function (error) {
+        setState([{ task: "No task found" }]);
+      });
+  };
+  
+  useEffect(() => {
+    fetchTaskData("http://localhost:3001/api/get/task/monday", setMondayItem);
+    fetchTaskData("http://localhost:3001/api/get/task/tuesday", setTuesdayItem);
+    fetchTaskData("http://localhost:3001/api/get/task/wednesday", setWednesdayItem);
+    fetchTaskData("http://localhost:3001/api/get/task/thursday", setThursdayItem);
+    fetchTaskData("http://localhost:3001/api/get/task/friday", setFridayItem);
+    fetchTaskData("http://localhost:3001/api/get/task/saturday", setSaturdayItem);
+    fetchTaskData("http://localhost:3001/api/get/task/sunday", setSundayItem);
+  }, []);
+  
+
   return (
     <div className="container">
       <div className="row">
@@ -29,12 +49,12 @@ function Days() {
             <div className="card-body">
               <h5 className="card-title">Sunday</h5>
 
-              {items.map((item) => (
-                <HeadingWithDelete task={item.task} />
+              {sundayItem.map((item) => (
+                <HeadingWithDelete task={item.task} key={item.task} day="sunday"/>
               ))}
 
               <div className="d-flex justify-content-center">
-                <a href="/#" className="btn btn-success mx-2">
+                <a href="/add/sunday/task" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
@@ -45,11 +65,11 @@ function Days() {
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Monday</h5>
-              {items.map((item) => (
-                <HeadingWithDelete task={item.task} />
+              {mondayItem.map((item) => (
+                <HeadingWithDelete task={item.task} key={item.task} day="monday"/>
               ))}
               <div className="d-flex justify-content-center">
-                <a href="/#" className="btn btn-success mx-2">
+                <a href="/add/monday/task" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
@@ -60,11 +80,11 @@ function Days() {
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Tuesday</h5>
-              {items.map((item) => (
-                <HeadingWithDelete task={item.task} />
+              {tuesdayItem.map((item) => (
+                <HeadingWithDelete task={item.task} key={item.task} day="tuesday"/>
               ))}
               <div className="d-flex justify-content-center">
-                <a href="/#" className="btn btn-success mx-2">
+                <a href="/add/tuesday/task" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
@@ -75,11 +95,11 @@ function Days() {
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Wednesday</h5>
-              {items.map((item) => (
-                <HeadingWithDelete task={item.task} />
+              {wednesdayItem.map((item) => (
+                <HeadingWithDelete task={item.task} key={item.task} day="wednesday"/>
               ))}
               <div className="d-flex justify-content-center">
-                <a href="/#" className="btn btn-success mx-2">
+                <a href="/add/wednesday/task" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
@@ -90,11 +110,11 @@ function Days() {
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Thursday</h5>
-              {items.map((item) => (
-                <HeadingWithDelete task={item.task} />
+              {thursdayItem.map((item) => (
+                <HeadingWithDelete task={item.task} key={item.task} day="thursday"/>
               ))}
               <div className="d-flex justify-content-center">
-                <a href="/#" className="btn btn-success mx-2">
+                <a href="/add/thursday/task" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
@@ -105,11 +125,11 @@ function Days() {
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Friday</h5>
-              {items.map((item) => (
-                <HeadingWithDelete task={item.task} />
+              {fridayItem.map((item) => (
+                <HeadingWithDelete task={item.task} key={item.task} day="friday"/>
               ))}
               <div className="d-flex justify-content-center">
-                <a href="/#" className="btn btn-success mx-2">
+                <a href="/add/friday/task" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>
@@ -120,11 +140,11 @@ function Days() {
           <div className="card">
             <div className="card-body">
               <h5 className="card-title">Saturday</h5>
-              {items.map((item) => (
-                <HeadingWithDelete task={item.task} />
+              {saturdayItem.map((item) => (
+                <HeadingWithDelete task={item.task} key={item.task} day="saturday"/>
               ))}
               <div className="d-flex justify-content-center">
-                <a href="/#" className="btn btn-success mx-2">
+                <a href="/add/saturday/task" className="btn btn-success mx-2">
                   Add
                 </a>
               </div>

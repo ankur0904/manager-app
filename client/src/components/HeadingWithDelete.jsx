@@ -1,11 +1,34 @@
 import React from "react";
+import axios from "axios";
 
 function HeadingWithDelete(props) {
+  function handleDelete() {
+    const { task, day } = props; // Destructure the task and day from props
+
+    axios({
+      method: "delete",
+      url: `http://localhost:3001/api/delete/task/${day}/${task}`,
+      headers: {
+        id: "ankur136",
+      },
+    })
+      .then(function (response) {
+        // Handle successful deletion (e.g., show a success message or update the state)
+        console.log("Task deleted successfully");
+        window.location.reload();
+      })
+      .catch(function (error) {
+        // Handle error (e.g., show an error message or handle the error state)
+        console.error("Error deleting task:", error);
+      });
+  }
+
   return (
     <>
       <p className="card-text d-flex justify-content-left">
         {props.task}
         <svg
+          onClick={handleDelete}
           xmlns="http://www.w3.org/2000/svg"
           width="28"
           fill="currentColor"
